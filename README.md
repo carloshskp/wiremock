@@ -1,6 +1,6 @@
 ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/carloshskp/wiremock/ci)
 
-# carloshb/wiremock
+# [carloshb/wiremock](https://github.com/carloshskp/wiremock)
 Wiremock Standalone Server with OpenJDK 8 using alpine linux
 
 ### How to use?
@@ -44,5 +44,37 @@ services:
 | HTTPS_PORT|8443     | Change wiremock https port
 
 ### Examples
-- [Using Dockerfile](/examples/docker/say-hello/README.md)
-- [Using docker-compose.yml](/examples/docker-compose/say-hello/README.md)
+#### Using terminal
+Clone the repository to use examples
+
+```
+git clone git@github.com:carloshskp/wiremock.git
+```
+Enter on wiremock directory
+```
+cd wiremock
+```
+Run container
+
+```
+docker run -v ${PWD}/examples/docker/say-hello:/home/wiremock -d --name wiremock-example -e PORT=8070 carloshb/wiremock
+``` 
+
+Test using curl
+
+```
+curl http://localhost:8070/say-hello
+```
+
+Output:
+
+```
+{
+  "message": "Hello World from Docker"
+}
+
+```
+
+#### [Using Dockerfile](https://github.com/carloshskp/wiremock/blob/master/examples/docker/say-hello/README.md)
+
+#### [Using docker-compose.yml](https://github.com/carloshskp/wiremock/blob/master/examples/docker-compose/say-hello/README.md)
