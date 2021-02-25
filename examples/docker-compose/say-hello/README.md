@@ -1,3 +1,5 @@
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/carloshskp/wiremock/ci)
+
 # say-hello
 Say hello with docker-compose using carloshb/wiremock
 
