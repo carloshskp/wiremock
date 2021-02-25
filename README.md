@@ -1,3 +1,5 @@
+![GitHub Workflow Status](https://img.shields.io/github/workflow/status/carloshskp/wiremock/ci)
+
 # carloshb/wiremock
 Wiremock Standalone Server with OpenJDK 8 using alpine linux
 
