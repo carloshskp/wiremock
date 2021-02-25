@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  wiremock:
+    image: carloshb/wiremock
+    volumes:
+      - ./:/home/wiremock
+    environment:
+      - PORT=8080
+      - HTTPS_PORT=8443
+    ports:
+      - 8080:8080
+      - 8443:8443
